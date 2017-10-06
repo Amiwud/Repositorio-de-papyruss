@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_Vd9_0KShEeeg1IF4q3rsUA" name="RootElement">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_VnxcEKShEeeg1IF4q3rsUA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Vn9pUKShEeeg1IF4q3rsUA">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_SA2t0KSjEeeg1IF4q3rsUA" name="gasolina">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_BoF48KowEee8YayMtSEDzA">
+        <body>&lt;&lt; Rationale >>&#xD;
+El requisito Escala2 depende identificarse mediante &#xD;
+1/4, 1/2 y 3/4 con el nivel de muestreo mediante agujas</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_L63wUKowEee8YayMtSEDzA">
+        <body>&lt;&lt; Rationale >>&#xD;
+Si este requisito con el nombre de Escala cambia, cambiaria el requisito con el nombre de indicador&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Rj7DgKowEee8YayMtSEDzA">
+        <body>&lt;&lt; Rationale >>&#xD;
+El requisito con el nombre de Delay esta relaciionado pero no depende del requisito de indicador </body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_XuzRYKowEee8YayMtSEDzA">
+        <body>&lt;&lt; Rationale >>&#xD;
+El requisito con el nombre de Control esta relacionado pero no depende del requisito de Indicador </body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HG16gKSnEeeg1IF4q3rsUA" name="Escala"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OmDeEKSnEeeg1IF4q3rsUA" name="Indicador"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Vl3I0KSnEeeg1IF4q3rsUA" name="Escala2"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f-a4EKSnEeeg1IF4q3rsUA" name="Control"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_npwMEKSnEeeg1IF4q3rsUA" name="Delay"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_5gL9sKovEee8YayMtSEDzA" name="Dependency" client="_Vl3I0KSnEeeg1IF4q3rsUA" supplier="_OmDeEKSnEeeg1IF4q3rsUA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_7kzg0KovEee8YayMtSEDzA" name="Trace" client="_HG16gKSnEeeg1IF4q3rsUA" supplier="_OmDeEKSnEeeg1IF4q3rsUA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_-OrtIKovEee8YayMtSEDzA" name="Satisfy" client="_npwMEKSnEeeg1IF4q3rsUA" supplier="_OmDeEKSnEeeg1IF4q3rsUA"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="__p34wKovEee8YayMtSEDzA" name="Satisfy" client="_f-a4EKSnEeeg1IF4q3rsUA" supplier="_OmDeEKSnEeeg1IF4q3rsUA"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VkDZsKShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VkO_4KShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VnhkcKShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VnhkcaShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VnuYwKShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VnuYwaShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Vnu_0KShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vnu_0aShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Vnu_0qShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vnu_06ShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Vnvm4KShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vnvm4aShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Vnvm4qShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vnvm46ShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VnwN8KShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VnwN8aShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VnwN8qShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VnwN86ShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Vnw1AKShEeeg1IF4q3rsUA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vnw1AaShEeeg1IF4q3rsUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_HHASkKSnEeeg1IF4q3rsUA" base_Class="_HG16gKSnEeeg1IF4q3rsUA" id="0 y 1" text="Escala a considerar 0 = Vacio a 1 = Lleno"/>
+  <Requirements:Requirement xmi:id="_OmPEQKSnEeeg1IF4q3rsUA" base_Class="_OmDeEKSnEeeg1IF4q3rsUA" id="Aguja" text="El nivel de muestreo es mediante agujas "/>
+  <Requirements:Requirement xmi:id="_VmA50KSnEeeg1IF4q3rsUA" base_Class="_Vl3I0KSnEeeg1IF4q3rsUA" id="Niveles" text="La escala debe de identificarse 1/4, 1/2, y 3/4"/>
+  <Requirements:Requirement xmi:id="_f-lQIKSnEeeg1IF4q3rsUA" base_Class="_f-a4EKSnEeeg1IF4q3rsUA" id="Litros" text="Es posible controlar libremente el nivel de 0 a 100%"/>
+  <Requirements:Requirement xmi:id="_np6kIKSnEeeg1IF4q3rsUA" base_Class="_npwMEKSnEeeg1IF4q3rsUA" id="4sec" text="La presentacion inicial de 0 a 100% en 4 segundos"/>
+  <Requirements:DeriveReqt xmi:id="_5gopoKovEee8YayMtSEDzA" base_DirectedRelationship="_5gL9sKovEee8YayMtSEDzA" base_Abstraction="_5gL9sKovEee8YayMtSEDzA"/>
+  <Requirements:Trace xmi:id="_7k9R0KovEee8YayMtSEDzA" base_DirectedRelationship="_7kzg0KovEee8YayMtSEDzA" base_Abstraction="_7kzg0KovEee8YayMtSEDzA"/>
+  <Requirements:DeriveReqt xmi:id="_-O03EKovEee8YayMtSEDzA" base_DirectedRelationship="_-OrtIKovEee8YayMtSEDzA" base_Abstraction="_-OrtIKovEee8YayMtSEDzA"/>
+  <Requirements:DeriveReqt xmi:id="__p34waovEee8YayMtSEDzA" base_DirectedRelationship="__p34wKovEee8YayMtSEDzA" base_Abstraction="__p34wKovEee8YayMtSEDzA"/>
+</xmi:XMI>
